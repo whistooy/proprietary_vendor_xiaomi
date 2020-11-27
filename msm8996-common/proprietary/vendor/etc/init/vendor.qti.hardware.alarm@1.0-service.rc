@@ -9,4 +9,3 @@ service alarm-hal-1-0 /vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
     group system
     oneshot
     disabled
-    writepid /dev/cpuset/system-background/tasks
