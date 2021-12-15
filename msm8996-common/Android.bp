@@ -181,18 +181,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.qualcomm.location",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "dpmserviceapp",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
@@ -208,6 +196,18 @@ android_app_import {
 	name: "ims",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "qcrilmsgtunnel",
+	owner: "xiaomi",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -262,27 +262,6 @@ prebuilt_etc_xml {
 }
 
 dex_import {
-	name: "QtiTelephonyServicelibrary",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/QtiTelephonyServicelibrary.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "com.qti.dpmframework",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
@@ -293,6 +272,13 @@ dex_import {
 	name: "dpmapi",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "xiaomi",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
 	system_ext_specific: true,
 }
 
