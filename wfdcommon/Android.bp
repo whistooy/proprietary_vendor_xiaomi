@@ -1,0 +1,5 @@
+dex_import {
+	name: "WfdCommon",
+	owner: "xiaomi",
+	jars: ["framework/WfdCommon.jar"],
+}

@@ -752,7 +752,9 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    WfdCommon \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.gnss@4.0-service \
     chargeonlymode
+
+# Inherit WfdCommon
+$(call inherit-product, vendor/xiaomi/wfdcommon/wfdcommon.mk)
